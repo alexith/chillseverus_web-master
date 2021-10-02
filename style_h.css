@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", Monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+  background-image: url("img/alexith22.jpg");
+
+  /* Used if the image is unavailable */
+  background-color: #313131;
+
+  /* Center the image */
+  background-position: center;
+
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
+}
+
+#brand-philosophy {
+  color: #f04580;
+  text-align: center;
+}
+
+button {
+  background-color: #9ec7ce;
+  border-radius: 4px;
+}
+
+#userResult {
+  color: #c0c0c0;
+}
+
+#main-heading {
+  color: #85cfec;
+  text-align: center;
+  text-decoration: none;
+}
+
+#notice {
+  color: #edacff;
+  text-align: center;
+}
+
+#queryResults {
+  text-align: center;
+}
+
+#createArt {
+  color: #e1a0f3;
+  text-decoration: none;
+}
+
+#footer {
+  font-family: "Source Code Pro", Monospace;
+  color: #04aa6d;
+  text-align: center;
+}
+
+/* Style inputs, select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #8d91921e;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

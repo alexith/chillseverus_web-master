@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, iniial-scale=1.0" />
+
+    <link rel="icon" href="logo/chillseverus-logo-main.png" />
+    <link rel="stylesheet" href="style_h.css" />
+    <title>chillSeverus</title>
+</head>
+<body>
+    <div>
+        <a href="index.html" id="main-heading"><h1>chillSeverus</h1></a>
+        <p id="notice">
+            <em>create unique or missing art</em>
+        </p>
+    </div>
+
+    <div class="container">
+        <form id="createArt">
+            <div class="row">
+                <div class="col-25">
+                    <label for="artName">Art Name</label>
+                </div>
+                <div class="col-75">
+                    <input id="artName" type="text" placeholder="Name of art" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="artYear">Year</label>
+                </div>
+                <div class="col-75">
+                    <input
+                    id="artYear"
+                    type="number"
+                    min="1900"
+                    max="2021"
+                    step="1"
+                    value="2021"
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="artGenre">Genre</label>
+                </div>
+                <div class="col-75">
+                    <input id="artGenre" type="text" placeholder="Genre" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="artDescription">Describe</label>
+                </div>
+                <div class="col-75">
+                    <textarea
+                        id="artDescription"
+                        name="artDescription"
+                        placeholder="Write description.."
+                        style="height: 200px"
+                        ></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <br />
+                <input type="submit" value="Submit" onclick="createArt()" />
+            </div>
+        </form>
+    </div>
+
+    <div id="queryResults">
+        <p id="userResult"></p>
+    </div>
+    <script src="ArtForm.js"></script>
+</body>
+</html>
